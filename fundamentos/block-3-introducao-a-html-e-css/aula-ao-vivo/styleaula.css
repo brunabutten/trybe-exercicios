@@ -115,6 +115,33 @@
             margin: 30px 30px;
         }
 
+        #learning {
+            height: 200px;
+            padding: 50px 15%;
+        }
+
+        #footer {
+            border: 2px solid black;
+        }
+
+        #learning-left {
+            float: left;
+        }
+
+        #learning-right {
+            float: right;
+        }
+
+        #learning-right img {
+            width: 100px;
+        }
+
+        #learning-left li {
+            /* line-height: 30px; */
+            margin-bottom: 10px;
+        }
+
+
 
 
 
