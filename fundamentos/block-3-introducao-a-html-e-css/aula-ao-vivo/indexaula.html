@@ -4,15 +4,63 @@
 <head>
     <meta charset="UTF-8">
     <title>Bob Esponja e sua cidade</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;1,100;1,200;1,300;1,400;1,500&family=Outfit:wght@100;200;300;400&family=Rock+Salt&display=swap" rel="stylesheet">
+    <style>
+        
+        body {
+            font-family: 'Outfit', sans-serif;
+        }
+
+        p, li {
+            color:#39659E;
+            font-size: 16px;
+        }
+
+        li {
+            font-size: 16px;
+            line-height: 1.4em;
+            list-style-type: square;
+        }
+
+        .titulo-azul {
+            color: #223C5E
+        }
+
+        #titulo-principal {
+            color: #29429E;
+            font-size: 45px;
+            line-height: 55px;
+            font-weight: 600;
+        }
+
+        .pictures {
+            border-radius: 50%;
+        }
+
+        h2 {
+            font-size: 28px;
+            line-height: 42px;
+            font-weight: 600;
+        }
+
+        h3 {
+            font-weight: 400;
+        }
+        
+
+
+    </style>
 </head>
 
 <body>
-    <h1>Fenda do Biquíni</h1>
+    <h1 id="titulo-principal">Fenda do Biquíni</h1>
     <p>Bob Esponja Calça Quadrada é uma esponja do mar que mora em uma casa de abacaxi. </p>
     <p>Junto ao melhor amigo, Patrick Estrela, ele sempre tira a paciência do vizinho Lula Molusco. Bob Esponja trabalha
         no Siri Cascudo, para o Sr. Sirigueijo, fazendo os <strong>hambúrgueres de siri</strong>.</p>
     <img src="vila.webp" alt="Fenda do Biquíni" width="400px">
-    <h2>Série</h2>
+    <h2 class="titulo-azul">Série</h2>
     <p>É uma série de animação americana, criada pelo biólogo marinho e animador Stephen Hillenburg, sendo produzida e
         exibida pela Nickelodeon. </p>
     <p>A escrita de um episódio da série começa com um esboço de duas páginas. A partir destes esboços, o diretor de
@@ -20,7 +68,7 @@
     <p>A equipe de roteiristas usa frequentemente suas experiências <strong>individuais</strong> ao longo da vida para
         inspirar as histórias de alguns episódios da série.</p>
 
-    <img src="bobesponja.png" alt="Bob Esponja" width="100px">
+    <img class="pictures" src="bobesponja.png" alt="Bob Esponja" width="100px">
     <p><em>Bob Esponja Calça Quadrada (nascido em 14 Julho de 1986, 33 anos de idade) é o principal protagonista e o
             personagem da série com o mesmo nome da Nickelodeon. Ele foi projetado pelo biólogo marinho e animador
             Stephen Hillenburg, e é dublado por Tom Kenny (no Brasil, é dublado por Wendel Bezerra). Bob Esponja é ua
@@ -28,42 +76,42 @@
             trabalha como cozinheiro no Siri Cascudo, um trabalho em que ele é extremamente hábil. Bob Esponja não tem
             muito conhecimento e é um aborrecimento constante para aqueles ao redor dele (especialmente Lula Molusco),
             mas ele tem uma boa índole.</em></p>
-    <h3>Bob Esponja<br>Esponja do mar</h3>
+    <h3 class="titulo-azul"><strong>Bob Esponja</strong><br>Esponja do mar</h3>
 
-    <img src="patrick.png" alt="Patrick" width="100px">
+    <img class="pictures" src="patrick.png" alt="Patrick" width="100px">
     <p><em>Patrick Estrela é o melhor amigo de Bob Esponja. Ele é uma estrela do mar estúpida, mas bem-intencionada, Ele
             não é o mais inteligente dos peixes no mar. Patrick é bastante gordo e adora sorvete e muitos outras
             porcarias. Ele é o deuteragonista do show. Ele mora debaixo de uma pedra. Bob Esponja e Lula Molusco são
             seus vizinhos.</em></p>
-    <h3>Patrick<br>Estrela do mar</h3>
+    <h3 class="titulo-azul"><strong>Patrick</strong><br>Estrela do mar</h3>
 
-    <img src="lulamolusco.png" alt="Lula Molusco" width="100px">
+    <img class="pictures" src="lulamolusco.png" alt="Lula Molusco" width="100px">
     <p><em>Lula Molusco é um polvo ranzinza, sempre de mal com tudo e com todos. Ele é o antipático vizinho do Bob,
             apesar do nome Lula é um polvo. O Lula trabalha no Siri Cascudo como caixa, junto ao atrapalhado Bob, e
             quase sempre se irrita com o comportamento infantil do companheiro. Adora tocar clarineta, e espera se
             tornar um dia um músico famoso, mas não é muito bom nisso. Seu arquirrival da escola de música se chama
             Squilliam Fancyson, além disso possui um trauma, o de ser careca.</em></p>
-    <h3>Lula Molusco<br>Polvo</h3>
+    <h3 class="titulo-azul"><strong>Lula Molusco</strong><br>Polvo</h3>
 
-    <h2>Quem falta na turma?</h2>
-    <img src="sandy.png" alt="Sandy" width="100px">
+    <h2 class="titulo-azul">Quem falta na turma?</h2>
+    <img class="pictures" src="sandy.png" alt="Sandy" width="100px">
     <p>Sandy Bochechas é um esquilo que vem do Texas e mora na Fenda do Biquíni. Quase terrestre, ela precisa de
         oxigênio para sobreviver e, por isso, utiliza uma roupa especial com um capacete de oxigênio. Sandy só retira
         essa roupa quando está na sua casa, a qual é como uma "estufa" cheia de ar; por isso quando seus amigos a
         visitam utilizam um capacete igual o de Sandy, porém cheio d'água. É também uma grande inventora: em diversos
         episódios aparece montando objetos de diversas utilidades. Gosta muito de lutar Karatê, e praticar vários
         esportes radicais, quase sempre com Bob Esponja.</p>
-    <h3>Sandy<br>Esquilo</h3>
+    <h3><strong>Sandy</strong><br>Esquilo</h3>
 
-    <img src="gary.png" alt="Gary" width="100px">
+    <img class="pictures" src="gary.png" alt="Gary" width="100px">
     <p>Garold "Gary" Wilson, Jr. é o amado animal de estimação de Bob Esponja, é curioso e está sempre pronto para
         aprender coisas novas. Ele aparenta ser mais inteligente que o dono, ele é guloso pela sua ração. Em uma parte
         do episódio "Descartado",Bob Esponja chama-o de "Gary Caracol", mas no episódio "Petiscos!" já é revelado que o
         nome de Gary é "Gary Wilson Jr." Ele acha o Bob Esponja patético mas adora ele.</p>
-    <h3>Gary<br>Caracol marinho</h3>
+    <h3><strong>Gary</strong><br>Caracol marinho</h3>
 
 
-    <h2>Quem será o vilão?</h2>
+    <h2 class="titulo-azul">Quem será o vilão?</h2>
     <ul>
         <li>Será o Lula Molusco?</li>
         <li>Será o Gary?</li>
