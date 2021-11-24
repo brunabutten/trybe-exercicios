@@ -59,7 +59,7 @@
 
         #header {
             background-image: url(/vila.webp);
-            height: 700px;
+            height: 600px;
             background-size: cover;
             background-position: 50% 05%;
             padding: 100px 200px;
@@ -74,6 +74,26 @@
             margin: 20px 0;
             color: #20343B;
         }
+
+        #market {
+            text-align: center;
+            padding-bottom: 50px;
+        }
+
+        #market p {
+            margin: 20px 0;
+        }
+
+        #market-text {
+            width: 50%;
+            margin: auto;
+        }
+
+        .section-title {
+            margin: 50px 0;
+        }
+
+
 
 
         
