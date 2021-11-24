@@ -1,0 +1,80 @@
+
+
+        * {
+            margin: 0;
+            padding: 0;
+        }        
+        
+        body {
+            font-family: 'Outfit', sans-serif;
+        }
+
+        p, li {
+            color:#39659E;
+            font-size: 16px;
+        }
+
+        .titulo-azul {
+            color: #223C5E
+        }
+
+        #titulo-principal {
+            color: #29429E;
+            font-size: 45px;
+            line-height: 55px;
+            font-weight: 600;
+        }
+
+        .pictures {
+            border-radius: 50%;
+        }
+
+        h2 {
+            font-size: 28px;
+            line-height: 42px;
+            font-weight: 600;
+        }
+
+        li {
+            font-size: 16px;
+            line-height: 1.4em;
+            list-style-type: square;
+        }
+
+        .green-button {
+            background-color: #6CADC4;
+            padding: 15px 30px;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 4px;
+            display: block;
+            margin: 50px auto;
+            width: 100px;
+            text-align: center;
+        }
+
+        h3 {
+            font-weight: 400;
+        }
+
+        #header {
+            background-image: url(/vila.webp);
+            height: 700px;
+            background-size: cover;
+            background-position: 50% 05%;
+            padding: 100px 200px;
+            
+        }
+
+        #header-text {
+            width: 40%;
+        }
+
+        #header-text p {
+            margin: 20px 0;
+            color: #20343B;
+        }
+
+
+        
+
