@@ -1,0 +1,17 @@
+
+
+
+
+#header-img {
+    background-image: url(sto.jpg);
+    }
+
+.header-text {
+    font-family: 'Outfit', sans-serif;
+    text-align: justify;
+    color: blue;
+}
+
+#titulo-principal {
+    color: red;
+}
