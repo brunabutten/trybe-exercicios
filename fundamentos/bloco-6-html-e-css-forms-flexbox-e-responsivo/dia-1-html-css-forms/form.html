@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formulario-curriculo</title>
+  <link href="styles.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+    <header class="form-header">
+        <h1>Formulário para cadastro de currículo</h1>
+        <p>Preencha os campos abaixo:</p>
+    </header>
+    <main>
+        <form id="form-cv">
+            <div class="form-row">
+                <fieldset>
+                    <div class="line-content">
+                        <label for="name">Nome: </label>
+                        <input type="text" name="name" id="name" maxlength="40" placeholder="Digite seu nome" required>
+                    </div>
+                    <br>
+                    <div class="line-content">
+                        <label for="email">E-mail: </label>
+                        <input class="email-input" type="email" name="email" id="email" maxlength="50"
+                            placeholder="Digite seu e-mail" required>
+                    </div>
+                    <br>
+                    <div class="line-content">
+                        <label for="cpf">Cpf: </label>
+                        <input type="text" name="cpf" id="cpf" maxlength="11" placeholder="Digite seu CPF" required>
+                    </div>
+                    <br>
+                    <div class="line-content">
+                        <label for="endereco">Endereço: </label>
+                        <input type="text" name="endereco" id="endereco" maxlength="200"
+                            placeholder="Digite seu endereço" required>
+                    </div>
+                    <br>
+                    <div class="line-content">
+                        <label for="cidade">Cidade: </label>
+                        <input type="text" name="cidade" id="cidade" maxlength="28" placeholder="Digite sua cidade"
+                            required>
+                    </div>
+                    <br>
+                    <div class="line-content">
+                        <label for="estado">Estado: </label>
+                        <select name="estado" id="estado" required>
+                            <option disabled selected value>Selecione seu estado</option>
+                        </select>
+                    </div>
+                    <br>
+                    <div class="line-content">
+                        <label for="tipodecasa">Tipo de imóvel: </label>
+                        <input type="radio" name="tipodecasa" id="casa" value="casa" required>
+                        <span>Casa</span>
+                        <input type="radio" name="tipodecasa" id="ape" value="ape" required>
+                        <span>Apartamento</span>
+                    </div>
+                </fieldset>
+        </form>
+
+        <fieldset>
+            <div class="line-content">
+                <label for="resumo">Resumo do Currículo</label>
+                <textarea name="resumo" id="resumo" cols="100" rows="20" maxlength="1000" required></textarea>
+            </div>
+            <br>
+            <div class="line-content">
+                <label for="role">Cargo: </label>
+                <input type="text" name="role" id="role" maxlength="40" required>
+            </div>
+            <br>
+            <div class="line-content">
+                <label for="cargo">Descrição do cargo: </label>
+                <input type="text" name="cargo" id="cargo" maxlength="500" required>
+            </div>
+            <br>
+            <div class="line-content">
+                <label for="data">Data de início: </label>
+                <input type="text" class="input-data" name="data" value="" required>
+            </div>
+            <br>
+        </fieldset>
+        <button class="submit-button" type="submit">Enviar</button>
+        <button class="clear-button" type="button">Limpar</button>
+        </div>
+    </form>
+    </main>
+    <section class="form-data"></section>
+    <script src="script.js"></script>
+</body>
+
+</html>
