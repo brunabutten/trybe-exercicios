@@ -1,18 +1,17 @@
-const firstLi = document.getElementById('first-li');
-const secondLi = document.getElementById('second-li');
-const thirdLi = document.getElementById('third-li');
-const input = document.getElementById('input');
-const myWebpage = document.getElementById('my-spotrybefy');
+let firstLi = document.getElementById('first-li');
+let secondLi = document.getElementById('second-li');
+let thirdLi = document.getElementById('third-li');
+let input = document.getElementById('input');
+let myWebpage = document.getElementById('my-spotrybefy');
 
 
 // 1. Copie esse arquivo e edite apenas ele;
 // 1.1. Antes de começar os exercícios, use o LiveServer para dar uma olhada em como está a página no navegador.
 // 1.2. Note que uma das caixas está um pouco acima das outras. Por que isso ocorre?
-
 // 2. Crie uma função que adicione a classe 'tech' ao elemento `li` quando for clicado.
 // 2.1. Deve existir apenas um elemento com a classe 'tech'. Como você faz isso?
 function handleChangeTech(event) {
-  const techElement = document.querySelector('.tech');
+  let techElement = document.querySelector('.tech');
   techElement.classList.remove('tech');
   event.target.classList.add('tech');
   input.value = '';
@@ -25,7 +24,7 @@ thirdLi.addEventListener('click', handleChangeTech);
 // 3. Crie uma função que, ao digitar na caixa de texto, altere o texto do elemento
 // com a classe 'tech';
 input.addEventListener('input', function(event) {
-  const techElement = document.querySelector('.tech');
+  let techElement = document.querySelector('.tech');
   techElement.innerText = event.target.value;
 });
 
@@ -33,7 +32,7 @@ input.addEventListener('input', function(event) {
 // redirecione para alguma página;
 // 4.1. Que tal redirecionar para seu portifólio?
 myWebpage.addEventListener('dblclick', function() {
-  window.location.replace('https://blog.betrybe.com/');
+  window.location.replace('https://github.com/brunabutten');
 });
 
 // 5. Crie uma função que, ao passar o mouse sobre 'Meu top 3 do Spotrybefy', altere
@@ -62,39 +61,3 @@ firstLi.addEventListener('dblclick', resetText);
 // Não precisa passar o parâmetro dentro da callback resetText. O próprio
 // navegador fará esse trabalho por você, não é legal? Desse jeito, o
 // event.target na nossa função retornará o objeto 'firstLi'.
-
-const firstLi = document.getElementById('first-li');
-const secondLi = document.getElementById('second-li');
-const thirdLi = document.getElementById('third-li');
-const input = document.getElementById('input');
-const myWebpage = document.getElementById('my-spotrybefy');
-
-function handleChangeTech(event) {
-  const techElement = document.querySelector('.tech');
-  techElement.classList.remove('tech');
-  event.target.classList.add('tech');
-  input.value = '';
-}
-
-firstLi.addEventListener('click', handleChangeTech);
-secondLi.addEventListener('click', handleChangeTech);
-thirdLi.addEventListener('click', handleChangeTech);
-
-
-input.addEventListener('input', function(event) {
-  const techElement = document.querySelector('.tech');
-  techElement.innerText = event.target.value;
-});
-
-myWebpage.addEventListener('dblclick', function() {
-  window.location.replace('https://blog.betrybe.com/');
-});
-
-
-myWebpage.addEventListener('mouseover', function(event) {
-  event.target.style.color = 'red';
-});
-
-myWebpage.addEventListener('mouseout', function(event) {
-  event.target.style.color = 'unset';
-});
