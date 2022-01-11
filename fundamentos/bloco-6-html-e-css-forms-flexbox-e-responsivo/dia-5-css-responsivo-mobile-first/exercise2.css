@@ -1,0 +1,63 @@
+html {
+    box-sizing: border-box;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+/* primeiro */
+
+@media screen and (max-width: 550px) {
+    body {
+        background-color: cornflowerblue;
+        font-family: 'Courier New', Courier, monospace;
+    }
+
+    .container {
+        flex-direction: column;
+    }
+
+    p {
+        padding: 0 10px;
+        line-height: 1.5em;
+    }
+
+    h1, h2, h3 {
+        padding: 0 10px;
+        /* como centralizar isso? */
+    }
+}
+
+/* segundo */
+
+@media screen and (min-width: 550px) {
+    body {
+        background-color: darkgreen;
+    }
+
+    .container {
+        flex-wrap: wrap;
+    }
+
+    p {
+        padding: 0 20px;
+        ;
+    }
+
+    h1, h2, h3 {
+        padding: 0 30px;
+    }
+}
+
+/* terceiro */
+
+@media screen and (min-width: 900px) {
+    body {
+        background-color: darkgrey;
+    }
+    .container {
+        flex-wrap: nowrap;
+    }
+    
+}
