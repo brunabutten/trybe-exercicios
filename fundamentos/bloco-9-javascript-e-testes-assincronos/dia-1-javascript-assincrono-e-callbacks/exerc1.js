@@ -1,32 +1,20 @@
-/* 1 - Dado o código abaixo, qual a ordem de finalização de execução das linhas comentadas? */
+/* 1 - Adicione uma callback como parâmetro da funcão getUser .
+No código abaixo você tem a função getUser , que define um objeto com os dados de uma pessoa. Complete a função getUser de forma que ela receba uma outra função como parâmetro ( callback ) e retorne os dados da pessoa para completar as operações abaixo:
+Insira o retorno da função getUser ;
+Complete a chamada da função getUser de modo que o retorno seja: "Hello! My name is Ivan Ivanovich";
+Complete a chamada da função getUser de modo que o retorno seja: "Ivan is Russian". */
 
-const planetDistanceFromSun = ({ name, distanceFromSun: { value, measurementUnit } }) =>
-    `${name} is ${value} ${measurementUnit} apart from the Sun`;
+const userFullName = ({ firstName, lastName }) => `Hello! My name is ${firstName} ${lastName}`;
+const userNationality = ({ firstName, nationality }) => `${firstName} is ${nationality}`;
 
-const mars = {
-    name: "Mars",
-    distanceFromSun: {
-        value: 227900000,
-        measurementUnit: "kilometers",
-    },
+const getUser = (callback) => {
+    const userToReturn = {
+        firstName: "Ivan",
+        lastName: "Ivanovich",
+        nationality: "Russian"
+    };
+    return callback(userToReturn);
 };
 
-const venus = {
-    name: "Venus",
-    distanceFromSun: {
-        value: 108200000,
-        measurementUnit: "kilometers",
-    },
-};
-
-const jupiter = {
-    name: "Jupiter",
-    distanceFromSun: {
-        value: 778500000,
-        measurementUnit: "kilometers",
-    },
-};
-
-console.log(planetDistanceFromSun(mars)); // A
-console.log(planetDistanceFromSun(venus)); // B
-console.log(planetDistanceFromSun(jupiter)); // C
+console.log(getUser(userFullName)); // complete a chamada da função getUser de modo que o retorno seja: "Hello! My name is Ivan Ivanovich"
+console.log(getUser(userNationality)); // complete a chamada da função getUser de modo que o retorno seja: "Ivan is Russian"
